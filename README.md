@@ -10,6 +10,7 @@ This makes use of The MicroCore ATtiny board definitions which is required to bu
 You can get MicroCore Here https://github.com/MCUdude/MicroCore. Suitable for any ATtiny13 based 5/6 pin LED project.
 
 Snow3:- 8 LED pattern lightshow utilising simple binary switching, includes various chase, flash and strobe effects.
+
 pwm_snowflake_v1_1:-  5 pattern lightshow utilising software PWM for smoother, more relaxed patterns. 
 
 Lightpatterns can be selected by cycling the unit's power to advance to the next pattern.
