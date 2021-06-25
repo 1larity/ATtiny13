@@ -4,7 +4,8 @@ various Attiny13 MCU projects
 Snowflake projects:-
 Firmware for ATtiny13a based LED DIY Chirstmas ornaments "Gikfun Snowflake Shape SMD SMT Welding Practice Soldering Skill Training Board DIY Kit for Arduino Christmas Tree Decoration Gift (Case Pack of 6) GK1018U "
 
-Available from Amazon:- https://www.amazon.co.uk/gp/product/B07JFWJZ3G
+Gikfun listing http://www.gikfun.com/electronic-diy-kits-c-7/snowflake-shape-smd-smt-soldering-skill-training-board-diy-kit-p-825.html
+Also available from Amazon:- https://www.amazon.co.uk/gp/product/B07JFWJZ3G
 
 This makes use of The MicroCore ATtiny board definitions which is required to build and upload firmware using Arduino IDE.
 You can get MicroCore Here https://github.com/MCUdude/MicroCore. Suitable for any ATtiny13 based 5/6 pin LED project.
