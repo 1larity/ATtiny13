@@ -1,0 +1,962 @@
+
+C:\Users\Rich\AppData\Local\Temp\arduino_build_706847/pwm_snowflake_v1_1.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	09 c0       	rjmp	.+18     	; 0x14 <__ctors_end>
+   2:	8b c1       	rjmp	.+790    	; 0x31a <__bad_interrupt>
+   4:	8a c1       	rjmp	.+788    	; 0x31a <__bad_interrupt>
+   6:	89 c1       	rjmp	.+786    	; 0x31a <__bad_interrupt>
+   8:	88 c1       	rjmp	.+784    	; 0x31a <__bad_interrupt>
+   a:	87 c1       	rjmp	.+782    	; 0x31a <__bad_interrupt>
+   c:	91 c1       	rjmp	.+802    	; 0x330 <__vector_6>
+   e:	85 c1       	rjmp	.+778    	; 0x31a <__bad_interrupt>
+  10:	a7 c1       	rjmp	.+846    	; 0x360 <__vector_8>
+  12:	83 c1       	rjmp	.+774    	; 0x31a <__bad_interrupt>
+
+00000014 <__ctors_end>:
+__trampolines_start():
+  14:	11 24       	eor	r1, r1
+  16:	1f be       	out	0x3f, r1	; 63
+  18:	cf e9       	ldi	r28, 0x9F	; 159
+  1a:	cd bf       	out	0x3d, r28	; 61
+
+0000001c <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  1c:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  1e:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  20:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  22:	e0 ed       	ldi	r30, 0xD0	; 208
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  24:	f3 e0       	ldi	r31, 0x03	; 3
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  26:	02 c0       	rjmp	.+4      	; 0x2c <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  28:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  2a:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  2c:	aa 36       	cpi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  2e:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  30:	d9 f7       	brne	.-10     	; 0x28 <__do_copy_data+0xc>
+
+00000032 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  32:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  34:	aa e6       	ldi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  36:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  38:	01 c0       	rjmp	.+2      	; 0x3c <.do_clear_bss_start>
+
+0000003a <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  3a:	1d 92       	st	X+, r1
+
+0000003c <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  3c:	ae 37       	cpi	r26, 0x7E	; 126
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  3e:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  40:	e1 f7       	brne	.-8      	; 0x3a <.do_clear_bss_loop>
+.do_clear_bss_start():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:69
+    out SREG, ZL
+    pop ZL
+    reti
+
+.section .init8
+    ldi r16, 1<<WDTIE
+  42:	00 e4       	ldi	r16, 0x40	; 64
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:70
+    out WDTCR, r16
+  44:	01 bd       	out	0x21, r16	; 33
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:71
+    sei
+  46:	78 94       	sei
+  48:	01 d0       	rcall	.+2      	; 0x4c <main>
+  4a:	c0 c1       	rjmp	.+896    	; 0x3cc <_exit>
+
+0000004c <main>:
+main():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/main.cpp:16
+  
+#include "Arduino.h"
+
+__attribute__(( section(".init9") ))
+int main()
+{
+  4c:	cf 93       	push	r28
+  4e:	df 93       	push	r29
+  50:	cd b7       	in	r28, 0x3d	; 61
+  52:	dd 27       	eor	r29, r29
+  54:	c4 50       	subi	r28, 0x04	; 4
+  56:	cd bf       	out	0x3d, r28	; 61
+eeprom_read():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:59
+}
+
+
+unsigned char eeprom_read(unsigned char addr)
+{
+  while (EECR & (1 << EEWE));
+  58:	e1 99       	sbic	0x1c, 1	; 28
+  5a:	fe cf       	rjmp	.-4      	; 0x58 <main+0xc>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:60
+  EEAR = addr;
+  5c:	1e ba       	out	0x1e, r1	; 30
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:61
+  EECR |= (1 << EERE);
+  5e:	e0 9a       	sbi	0x1c, 0	; 28
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:62
+  return EEDR;
+  60:	8d b3       	in	r24, 0x1d	; 29
+initConfig():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:69
+
+//get and increment pattern mode from eeprom
+void initConfig()
+{
+  mode = eeprom_read(0);
+  mode++;
+  62:	8f 5f       	subi	r24, 0xFF	; 255
+  64:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <mode>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:70
+  if (mode >= maxMode) mode = 0; 
+  68:	84 30       	cpi	r24, 0x04	; 4
+  6a:	10 f0       	brcs	.+4      	; 0x70 <main+0x24>
+  6c:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <mode>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:71
+  eeprom_write(0, mode);
+  70:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <mode>
+eeprom_write():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:47
+
+
+
+void eeprom_write(unsigned char addr, unsigned char wdata)
+{
+  cli();
+  74:	f8 94       	cli
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:48
+  while (EECR & (1 << EEWE)); 
+  76:	e1 99       	sbic	0x1c, 1	; 28
+  78:	fe cf       	rjmp	.-4      	; 0x76 <main+0x2a>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:49
+  EECR = (0 << EEPM1) | (0 >> EEPM0);
+  7a:	1c ba       	out	0x1c, r1	; 28
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:50
+  EEAR = addr; 
+  7c:	1e ba       	out	0x1e, r1	; 30
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:51
+  EEDR = wdata;
+  7e:	8d bb       	out	0x1d, r24	; 29
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:52
+  EECR |= (1 << EEMWE); 
+  80:	e2 9a       	sbi	0x1c, 2	; 28
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:53
+  EECR |= (1 << EEWE); 
+  82:	e1 9a       	sbi	0x1c, 1	; 28
+setup():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:96
+}
+
+void setup() {
+  /* setup */
+  initConfig(); //read mode setting from EEPROM
+  DDRB = 0b111111111; //set all pins to output
+  84:	8f ef       	ldi	r24, 0xFF	; 255
+  86:	87 bb       	out	0x17, r24	; 23
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:97
+  PORTB = 0b00000000; // set all pins to LOW
+  88:	18 ba       	out	0x18, r1	; 24
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:98
+  TCCR0B =  1 << CS00;
+  8a:	81 e0       	ldi	r24, 0x01	; 1
+  8c:	83 bf       	out	0x33, r24	; 51
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:99
+  TCCR0A |= (1 << WGM01) | (1 << WGM00) ; // set timer mode to FAST PWM
+  8e:	8f b5       	in	r24, 0x2f	; 47
+  90:	83 60       	ori	r24, 0x03	; 3
+  92:	8f bd       	out	0x2f, r24	; 47
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:100
+  OCR0A = 10; // compare timer with this value (will cause interrupt)
+  94:	8a e0       	ldi	r24, 0x0A	; 10
+  96:	86 bf       	out	0x36, r24	; 54
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:101
+  TIMSK0 |= (1 << OCIE0A); // enable Timer compare interrupt
+  98:	89 b7       	in	r24, 0x39	; 57
+  9a:	84 60       	ori	r24, 0x04	; 4
+  9c:	89 bf       	out	0x39, r24	; 57
+bbs_init():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:83
+}
+
+//init PRNG
+void bbs_init(uint16_t p, uint16_t q, uint16_t seed)
+{
+  m = p * q;
+  9e:	8d ee       	ldi	r24, 0xED	; 237
+  a0:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__data_end>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:84
+  r = x = seed;
+  a4:	8b e7       	ldi	r24, 0x7B	; 123
+  a6:	80 93 6d 00 	sts	0x006D, r24	; 0x80006d <x>
+  aa:	8b e7       	ldi	r24, 0x7B	; 123
+  ac:	90 e0       	ldi	r25, 0x00	; 0
+  ae:	90 93 6c 00 	sts	0x006C, r25	; 0x80006c <r+0x1>
+  b2:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <r>
+setup():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:103
+  TCCR0B =  1 << CS00;
+  TCCR0A |= (1 << WGM01) | (1 << WGM00) ; // set timer mode to FAST PWM
+  OCR0A = 10; // compare timer with this value (will cause interrupt)
+  TIMSK0 |= (1 << OCIE0A); // enable Timer compare interrupt
+  bbs_init(BBS_P, BBS_Q, BBS_SEED); // init PRNG.
+  sei(); // enable global interrupts
+  b6:	78 94       	sei
+digitalWrite():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:49
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+  b8:	01 e0       	ldi	r16, 0x01	; 1
+  ba:	10 e0       	ldi	r17, 0x00	; 0
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:156
+  //fade alternating leds on/off
+  if (mode == 3) {
+    if (intCounter  <= dutyThreshHold) {
+      PORTB = 0b11101101; //  LED pins on
+    } else {
+      PORTB = 0b00010010; //  LED pins off
+  bc:	82 e1       	ldi	r24, 0x12	; 18
+  be:	78 2e       	mov	r7, r24
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:154
+  }
+
+  //fade alternating leds on/off
+  if (mode == 3) {
+    if (intCounter  <= dutyThreshHold) {
+      PORTB = 0b11101101; //  LED pins on
+  c0:	9d ee       	ldi	r25, 0xED	; 237
+  c2:	b9 2e       	mov	r11, r25
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:163
+  }
+
+  //fade all on/off
+  if (mode == 4) {
+    if (intCounter  <= dutyThreshHold) {
+      PORTB = 0b11111111; //  LED pins on
+  c4:	aa 24       	eor	r10, r10
+  c6:	aa 94       	dec	r10
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:180
+    dutyThreshHold += rate; //increment/decremet the on-time threshold (and thus PWM duty cycle)
+    if (dutyThreshHold >= 255) {
+      rate = -cRate; //if we've reached max duty cycle, set rate to decrement
+    }
+    if (dutyThreshHold <= 0) {
+      rate = cRate; //if we've reached min duty cycle, set rate to increment
+  c8:	20 e1       	ldi	r18, 0x10	; 16
+  ca:	92 2e       	mov	r9, r18
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:183
+      currentLED = currentLED + 1; //advance curent LED
+
+      randLED = (bbs_next()) % maxLEDs;
+  cc:	35 e0       	ldi	r19, 0x05	; 5
+  ce:	e3 2e       	mov	r14, r19
+  d0:	f1 2c       	mov	r15, r1
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:177
+  if (currentMillis - previousMillis > increment)
+  {
+    //do fade in/out stuff
+    dutyThreshHold += rate; //increment/decremet the on-time threshold (and thus PWM duty cycle)
+    if (dutyThreshHold >= 255) {
+      rate = -cRate; //if we've reached max duty cycle, set rate to decrement
+  d2:	40 ef       	ldi	r20, 0xF0	; 240
+  d4:	84 2e       	mov	r8, r20
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:111
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  //twinkle random leds
+  if (mode == 0) {
+  d6:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <mode>
+  da:	81 11       	cpse	r24, r1
+  dc:	2c c0       	rjmp	.+88     	; 0x136 <__stack+0x97>
+main():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:112
+    for (int i = 0; i < maxLEDs; i++) {
+  de:	90 e0       	ldi	r25, 0x00	; 0
+  e0:	80 e0       	ldi	r24, 0x00	; 0
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:113
+      if (i != randLED) {
+  e2:	20 91 78 00 	lds	r18, 0x0078	; 0x800078 <randLED>
+  e6:	28 17       	cp	r18, r24
+  e8:	19 06       	cpc	r1, r25
+  ea:	79 f0       	breq	.+30     	; 0x10a <__stack+0x6b>
+digitalWrite():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:49
+  ec:	48 b3       	in	r20, 0x18	; 24
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:114
+        digitalWrite(pinOut[i], LOW);
+  ee:	fc 01       	movw	r30, r24
+  f0:	ec 59       	subi	r30, 0x9C	; 156
+  f2:	ff 4f       	sbci	r31, 0xFF	; 255
+digitalWrite():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:49
+  f4:	20 81       	ld	r18, Z
+  f6:	b8 01       	movw	r22, r16
+  f8:	02 c0       	rjmp	.+4      	; 0xfe <__stack+0x5f>
+  fa:	66 0f       	add	r22, r22
+  fc:	77 1f       	adc	r23, r23
+  fe:	2a 95       	dec	r18
+ 100:	e2 f7       	brpl	.-8      	; 0xfa <__stack+0x5b>
+ 102:	9b 01       	movw	r18, r22
+ 104:	20 95       	com	r18
+ 106:	24 23       	and	r18, r20
+ 108:	28 bb       	out	0x18, r18	; 24
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:112
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  //twinkle random leds
+  if (mode == 0) {
+    for (int i = 0; i < maxLEDs; i++) {
+ 10a:	01 96       	adiw	r24, 0x01	; 1
+ 10c:	85 30       	cpi	r24, 0x05	; 5
+ 10e:	91 05       	cpc	r25, r1
+ 110:	41 f7       	brne	.-48     	; 0xe2 <__stack+0x43>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:118
+      if (i != randLED) {
+        digitalWrite(pinOut[i], LOW);
+      }
+    }
+
+    if (intCounter  <= dutyThreshHold) {
+ 112:	90 91 77 00 	lds	r25, 0x0077	; 0x800077 <intCounter>
+ 116:	e0 91 78 00 	lds	r30, 0x0078	; 0x800078 <randLED>
+ 11a:	f0 e0       	ldi	r31, 0x00	; 0
+ 11c:	ec 59       	subi	r30, 0x9C	; 156
+ 11e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 120:	80 81       	ld	r24, Z
+ 122:	20 91 61 00 	lds	r18, 0x0061	; 0x800061 <dutyThreshHold>
+ 126:	30 91 62 00 	lds	r19, 0x0062	; 0x800062 <dutyThreshHold+0x1>
+ 12a:	92 17       	cp	r25, r18
+ 12c:	13 06       	cpc	r1, r19
+ 12e:	11 f0       	breq	.+4      	; 0x134 <__stack+0x95>
+ 130:	0c f0       	brlt	.+2      	; 0x134 <__stack+0x95>
+ 132:	a7 c0       	rjmp	.+334    	; 0x282 <__stack+0x1e3>
+digitalWrite():
+ 134:	f3 d0       	rcall	.+486    	; 0x31c <digitalWrite.part.1>
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:127
+    }
+
+  }
+
+  //inverted single LED chase
+  if (mode == 1) {
+ 136:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <mode>
+ 13a:	81 30       	cpi	r24, 0x01	; 1
+ 13c:	41 f5       	brne	.+80     	; 0x18e <__stack+0xef>
+main():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:129
+    //turn on all LEDs apart from current
+    for (int i = 0; i < maxLEDs; i++) {
+ 13e:	d1 2c       	mov	r13, r1
+ 140:	c1 2c       	mov	r12, r1
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:130
+      if (i != currentLED) {
+ 142:	b0 91 76 00 	lds	r27, 0x0076	; 0x800076 <currentLED>
+ 146:	eb 2f       	mov	r30, r27
+ 148:	f0 e0       	ldi	r31, 0x00	; 0
+ 14a:	fa 83       	std	Y+2, r31	; 0x02
+ 14c:	e9 83       	std	Y+1, r30	; 0x01
+ 14e:	ec 15       	cp	r30, r12
+ 150:	fd 05       	cpc	r31, r13
+ 152:	29 f0       	breq	.+10     	; 0x15e <__stack+0xbf>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:131
+        digitalWrite(pinOut[i], HIGH);
+ 154:	f6 01       	movw	r30, r12
+ 156:	ec 59       	subi	r30, 0x9C	; 156
+ 158:	ff 4f       	sbci	r31, 0xFF	; 255
+digitalWrite():
+ 15a:	80 81       	ld	r24, Z
+ 15c:	df d0       	rcall	.+446    	; 0x31c <digitalWrite.part.1>
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:129
+  }
+
+  //inverted single LED chase
+  if (mode == 1) {
+    //turn on all LEDs apart from current
+    for (int i = 0; i < maxLEDs; i++) {
+ 15e:	2f ef       	ldi	r18, 0xFF	; 255
+ 160:	c2 1a       	sub	r12, r18
+ 162:	d2 0a       	sbc	r13, r18
+ 164:	35 e0       	ldi	r19, 0x05	; 5
+ 166:	c3 16       	cp	r12, r19
+ 168:	d1 04       	cpc	r13, r1
+ 16a:	59 f7       	brne	.-42     	; 0x142 <__stack+0xa3>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:135
+      if (i != currentLED) {
+        digitalWrite(pinOut[i], HIGH);
+      }
+    }
+    //fade current LED out then in
+    if (intCounter  >= dutyThreshHold) {
+ 16c:	90 91 77 00 	lds	r25, 0x0077	; 0x800077 <intCounter>
+ 170:	49 81       	ldd	r20, Y+1	; 0x01
+ 172:	5a 81       	ldd	r21, Y+2	; 0x02
+ 174:	4c 59       	subi	r20, 0x9C	; 156
+ 176:	5f 4f       	sbci	r21, 0xFF	; 255
+ 178:	da 01       	movw	r26, r20
+ 17a:	8c 91       	ld	r24, X
+ 17c:	20 91 61 00 	lds	r18, 0x0061	; 0x800061 <dutyThreshHold>
+ 180:	30 91 62 00 	lds	r19, 0x0062	; 0x800062 <dutyThreshHold+0x1>
+ 184:	92 17       	cp	r25, r18
+ 186:	13 06       	cpc	r1, r19
+ 188:	0c f4       	brge	.+2      	; 0x18c <__stack+0xed>
+ 18a:	87 c0       	rjmp	.+270    	; 0x29a <__stack+0x1fb>
+digitalWrite():
+ 18c:	c7 d0       	rcall	.+398    	; 0x31c <digitalWrite.part.1>
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:143
+      digitalWrite(pinOut[currentLED], LOW);
+    }
+  }
+
+  //single LED chase
+  if (mode == 2) {
+ 18e:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <mode>
+ 192:	82 30       	cpi	r24, 0x02	; 2
+ 194:	91 f4       	brne	.+36     	; 0x1ba <__stack+0x11b>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:144
+    if (intCounter  <= dutyThreshHold) {
+ 196:	90 91 77 00 	lds	r25, 0x0077	; 0x800077 <intCounter>
+ 19a:	e0 91 76 00 	lds	r30, 0x0076	; 0x800076 <currentLED>
+ 19e:	f0 e0       	ldi	r31, 0x00	; 0
+ 1a0:	ec 59       	subi	r30, 0x9C	; 156
+ 1a2:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1a4:	80 81       	ld	r24, Z
+ 1a6:	20 91 61 00 	lds	r18, 0x0061	; 0x800061 <dutyThreshHold>
+ 1aa:	30 91 62 00 	lds	r19, 0x0062	; 0x800062 <dutyThreshHold+0x1>
+ 1ae:	92 17       	cp	r25, r18
+ 1b0:	13 06       	cpc	r1, r19
+ 1b2:	11 f0       	breq	.+4      	; 0x1b8 <__stack+0x119>
+ 1b4:	0c f0       	brlt	.+2      	; 0x1b8 <__stack+0x119>
+ 1b6:	7d c0       	rjmp	.+250    	; 0x2b2 <__stack+0x213>
+digitalWrite():
+ 1b8:	b1 d0       	rcall	.+354    	; 0x31c <digitalWrite.part.1>
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:152
+      digitalWrite(pinOut[currentLED], LOW);
+    }
+  }
+
+  //fade alternating leds on/off
+  if (mode == 3) {
+ 1ba:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <mode>
+ 1be:	83 30       	cpi	r24, 0x03	; 3
+ 1c0:	61 f4       	brne	.+24     	; 0x1da <__stack+0x13b>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:153
+    if (intCounter  <= dutyThreshHold) {
+ 1c2:	20 91 77 00 	lds	r18, 0x0077	; 0x800077 <intCounter>
+ 1c6:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <dutyThreshHold>
+ 1ca:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <dutyThreshHold+0x1>
+ 1ce:	28 17       	cp	r18, r24
+ 1d0:	19 06       	cpc	r1, r25
+ 1d2:	11 f0       	breq	.+4      	; 0x1d8 <__stack+0x139>
+ 1d4:	0c f0       	brlt	.+2      	; 0x1d8 <__stack+0x139>
+ 1d6:	79 c0       	rjmp	.+242    	; 0x2ca <__stack+0x22b>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:154
+      PORTB = 0b11101101; //  LED pins on
+ 1d8:	b8 ba       	out	0x18, r11	; 24
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:161
+      PORTB = 0b00010010; //  LED pins off
+    }
+  }
+
+  //fade all on/off
+  if (mode == 4) {
+ 1da:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <mode>
+ 1de:	84 30       	cpi	r24, 0x04	; 4
+ 1e0:	61 f4       	brne	.+24     	; 0x1fa <__stack+0x15b>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:162
+    if (intCounter  <= dutyThreshHold) {
+ 1e2:	20 91 77 00 	lds	r18, 0x0077	; 0x800077 <intCounter>
+ 1e6:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <dutyThreshHold>
+ 1ea:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <dutyThreshHold+0x1>
+ 1ee:	28 17       	cp	r18, r24
+ 1f0:	19 06       	cpc	r1, r25
+ 1f2:	11 f0       	breq	.+4      	; 0x1f8 <__stack+0x159>
+ 1f4:	0c f0       	brlt	.+2      	; 0x1f8 <__stack+0x159>
+ 1f6:	6b c0       	rjmp	.+214    	; 0x2ce <__stack+0x22f>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:163
+      PORTB = 0b11111111; //  LED pins on
+ 1f8:	a8 ba       	out	0x18, r10	; 24
+millis():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring.c:38
+ * @return uint32_t Number of milliseconds passed since the program started
+ */
+uint32_t millis()
+{
+  uint32_t m;
+  asm volatile ("rcall _millis" : "=w" (m) :: "r30");
+ 1fa:	ab d0       	rcall	.+342    	; 0x352 <_millis>
+ 1fc:	89 83       	std	Y+1, r24	; 0x01
+ 1fe:	9a 83       	std	Y+2, r25	; 0x02
+ 200:	ab 83       	std	Y+3, r26	; 0x03
+ 202:	bc 83       	std	Y+4, r27	; 0x04
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:171
+    }
+  }
+
+
+  //stuff we want to do every n milliseconds, such as changing current LED, checking if a fade is complete
+  currentMillis = millis();
+ 204:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <currentMillis>
+ 208:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <currentMillis+0x1>
+ 20c:	a0 93 74 00 	sts	0x0074, r26	; 0x800074 <currentMillis+0x2>
+ 210:	b0 93 75 00 	sts	0x0075, r27	; 0x800075 <currentMillis+0x3>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:172
+  if (currentMillis - previousMillis > increment)
+ 214:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <previousMillis>
+ 218:	90 91 6f 00 	lds	r25, 0x006F	; 0x80006f <previousMillis+0x1>
+ 21c:	a0 91 70 00 	lds	r26, 0x0070	; 0x800070 <previousMillis+0x2>
+ 220:	b0 91 71 00 	lds	r27, 0x0071	; 0x800071 <previousMillis+0x3>
+ 224:	29 81       	ldd	r18, Y+1	; 0x01
+ 226:	3a 81       	ldd	r19, Y+2	; 0x02
+ 228:	4b 81       	ldd	r20, Y+3	; 0x03
+ 22a:	5c 81       	ldd	r21, Y+4	; 0x04
+ 22c:	28 1b       	sub	r18, r24
+ 22e:	39 0b       	sbc	r19, r25
+ 230:	4a 0b       	sbc	r20, r26
+ 232:	5b 0b       	sbc	r21, r27
+ 234:	da 01       	movw	r26, r20
+ 236:	c9 01       	movw	r24, r18
+ 238:	02 97       	sbiw	r24, 0x02	; 2
+ 23a:	a1 05       	cpc	r26, r1
+ 23c:	b1 05       	cpc	r27, r1
+ 23e:	0c f4       	brge	.+2      	; 0x242 <__stack+0x1a3>
+ 240:	4a cf       	rjmp	.-364    	; 0xd6 <__stack+0x37>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:175
+  {
+    //do fade in/out stuff
+    dutyThreshHold += rate; //increment/decremet the on-time threshold (and thus PWM duty cycle)
+ 242:	20 91 60 00 	lds	r18, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 246:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <dutyThreshHold>
+ 24a:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <dutyThreshHold+0x1>
+ 24e:	82 0f       	add	r24, r18
+ 250:	91 1d       	adc	r25, r1
+ 252:	27 fd       	sbrc	r18, 7
+ 254:	9a 95       	dec	r25
+ 256:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <dutyThreshHold+0x1>
+ 25a:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <dutyThreshHold>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:176
+    if (dutyThreshHold >= 255) {
+ 25e:	8f 3f       	cpi	r24, 0xFF	; 255
+ 260:	91 05       	cpc	r25, r1
+ 262:	bc f1       	brlt	.+110    	; 0x2d2 <__stack+0x233>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:177
+      rate = -cRate; //if we've reached max duty cycle, set rate to decrement
+ 264:	80 92 60 00 	sts	0x0060, r8	; 0x800060 <__DATA_REGION_ORIGIN__>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:191
+        currentLED = 0; //loop around to first LED
+      }
+
+
+    }
+    previousMillis = currentMillis; // save the last time you did this (reset timer)
+ 268:	49 81       	ldd	r20, Y+1	; 0x01
+ 26a:	5a 81       	ldd	r21, Y+2	; 0x02
+ 26c:	6b 81       	ldd	r22, Y+3	; 0x03
+ 26e:	7c 81       	ldd	r23, Y+4	; 0x04
+ 270:	40 93 6e 00 	sts	0x006E, r20	; 0x80006e <previousMillis>
+ 274:	50 93 6f 00 	sts	0x006F, r21	; 0x80006f <previousMillis+0x1>
+ 278:	60 93 70 00 	sts	0x0070, r22	; 0x800070 <previousMillis+0x2>
+ 27c:	70 93 71 00 	sts	0x0071, r23	; 0x800071 <previousMillis+0x3>
+ 280:	2a cf       	rjmp	.-428    	; 0xd6 <__stack+0x37>
+digitalWrite():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:49
+ 282:	28 b3       	in	r18, 0x18	; 24
+ 284:	d8 01       	movw	r26, r16
+ 286:	02 c0       	rjmp	.+4      	; 0x28c <__stack+0x1ed>
+ 288:	aa 0f       	add	r26, r26
+ 28a:	bb 1f       	adc	r27, r27
+ 28c:	8a 95       	dec	r24
+ 28e:	e2 f7       	brpl	.-8      	; 0x288 <__stack+0x1e9>
+ 290:	cd 01       	movw	r24, r26
+ 292:	80 95       	com	r24
+ 294:	82 23       	and	r24, r18
+ 296:	88 bb       	out	0x18, r24	; 24
+ 298:	4e cf       	rjmp	.-356    	; 0x136 <__stack+0x97>
+ 29a:	28 b3       	in	r18, 0x18	; 24
+ 29c:	f8 01       	movw	r30, r16
+ 29e:	02 c0       	rjmp	.+4      	; 0x2a4 <__stack+0x205>
+ 2a0:	ee 0f       	add	r30, r30
+ 2a2:	ff 1f       	adc	r31, r31
+ 2a4:	8a 95       	dec	r24
+ 2a6:	e2 f7       	brpl	.-8      	; 0x2a0 <__stack+0x201>
+ 2a8:	cf 01       	movw	r24, r30
+ 2aa:	80 95       	com	r24
+ 2ac:	82 23       	and	r24, r18
+ 2ae:	88 bb       	out	0x18, r24	; 24
+ 2b0:	6e cf       	rjmp	.-292    	; 0x18e <__stack+0xef>
+ 2b2:	28 b3       	in	r18, 0x18	; 24
+ 2b4:	a8 01       	movw	r20, r16
+ 2b6:	02 c0       	rjmp	.+4      	; 0x2bc <__stack+0x21d>
+ 2b8:	44 0f       	add	r20, r20
+ 2ba:	55 1f       	adc	r21, r21
+ 2bc:	8a 95       	dec	r24
+ 2be:	e2 f7       	brpl	.-8      	; 0x2b8 <__stack+0x219>
+ 2c0:	ca 01       	movw	r24, r20
+ 2c2:	80 95       	com	r24
+ 2c4:	82 23       	and	r24, r18
+ 2c6:	88 bb       	out	0x18, r24	; 24
+ 2c8:	78 cf       	rjmp	.-272    	; 0x1ba <__stack+0x11b>
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:156
+  //fade alternating leds on/off
+  if (mode == 3) {
+    if (intCounter  <= dutyThreshHold) {
+      PORTB = 0b11101101; //  LED pins on
+    } else {
+      PORTB = 0b00010010; //  LED pins off
+ 2ca:	78 ba       	out	0x18, r7	; 24
+ 2cc:	86 cf       	rjmp	.-244    	; 0x1da <__stack+0x13b>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:165
+  //fade all on/off
+  if (mode == 4) {
+    if (intCounter  <= dutyThreshHold) {
+      PORTB = 0b11111111; //  LED pins on
+    } else {
+      PORTB = 0b00000000; //  LED pins off
+ 2ce:	18 ba       	out	0x18, r1	; 24
+ 2d0:	94 cf       	rjmp	.-216    	; 0x1fa <__stack+0x15b>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:179
+    //do fade in/out stuff
+    dutyThreshHold += rate; //increment/decremet the on-time threshold (and thus PWM duty cycle)
+    if (dutyThreshHold >= 255) {
+      rate = -cRate; //if we've reached max duty cycle, set rate to decrement
+    }
+    if (dutyThreshHold <= 0) {
+ 2d2:	18 16       	cp	r1, r24
+ 2d4:	19 06       	cpc	r1, r25
+ 2d6:	44 f2       	brlt	.-112    	; 0x268 <__stack+0x1c9>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:180
+      rate = cRate; //if we've reached min duty cycle, set rate to increment
+ 2d8:	90 92 60 00 	sts	0x0060, r9	; 0x800060 <__DATA_REGION_ORIGIN__>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:181
+      currentLED = currentLED + 1; //advance curent LED
+ 2dc:	20 91 76 00 	lds	r18, 0x0076	; 0x800076 <currentLED>
+ 2e0:	2f 5f       	subi	r18, 0xFF	; 255
+ 2e2:	20 93 76 00 	sts	0x0076, r18	; 0x800076 <currentLED>
+bbs_next():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:90
+}
+
+//generate PRNG
+uint16_t bbs_next()
+{
+  return (r = (r * x) % m);
+ 2e6:	80 91 6d 00 	lds	r24, 0x006D	; 0x80006d <x>
+ 2ea:	60 91 6b 00 	lds	r22, 0x006B	; 0x80006b <r>
+ 2ee:	70 91 6c 00 	lds	r23, 0x006C	; 0x80006c <r+0x1>
+ 2f2:	90 e0       	ldi	r25, 0x00	; 0
+ 2f4:	46 d0       	rcall	.+140    	; 0x382 <__mulhi3>
+ 2f6:	60 91 6a 00 	lds	r22, 0x006A	; 0x80006a <__data_end>
+ 2fa:	70 e0       	ldi	r23, 0x00	; 0
+ 2fc:	53 d0       	rcall	.+166    	; 0x3a4 <__udivmodhi4>
+ 2fe:	90 93 6c 00 	sts	0x006C, r25	; 0x80006c <r+0x1>
+ 302:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <r>
+loop():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:183
+    }
+    if (dutyThreshHold <= 0) {
+      rate = cRate; //if we've reached min duty cycle, set rate to increment
+      currentLED = currentLED + 1; //advance curent LED
+
+      randLED = (bbs_next()) % maxLEDs;
+ 306:	b7 01       	movw	r22, r14
+ 308:	4d d0       	rcall	.+154    	; 0x3a4 <__udivmodhi4>
+ 30a:	80 93 78 00 	sts	0x0078, r24	; 0x800078 <randLED>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:185
+
+      if (currentLED >= maxLEDs) { //have we got past the last LED?
+ 30e:	25 30       	cpi	r18, 0x05	; 5
+ 310:	08 f4       	brcc	.+2      	; 0x314 <__stack+0x275>
+ 312:	aa cf       	rjmp	.-172    	; 0x268 <__stack+0x1c9>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:186
+        currentLED = 0; //loop around to first LED
+ 314:	10 92 76 00 	sts	0x0076, r1	; 0x800076 <currentLED>
+ 318:	a7 cf       	rjmp	.-178    	; 0x268 <__stack+0x1c9>
+
+0000031a <__bad_interrupt>:
+__vector_1():
+ 31a:	72 ce       	rjmp	.-796    	; 0x0 <__vectors>
+
+0000031c <digitalWrite.part.1>:
+digitalWrite.part.1():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:47
+ * @param val The state to set. Valid options are HIGH or LOW
+ */
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+ 31c:	98 b3       	in	r25, 0x18	; 24
+ 31e:	21 e0       	ldi	r18, 0x01	; 1
+ 320:	30 e0       	ldi	r19, 0x00	; 0
+ 322:	01 c0       	rjmp	.+2      	; 0x326 <digitalWrite.part.1+0xa>
+ 324:	22 0f       	add	r18, r18
+ 326:	8a 95       	dec	r24
+ 328:	ea f7       	brpl	.-6      	; 0x324 <digitalWrite.part.1+0x8>
+ 32a:	92 2b       	or	r25, r18
+ 32c:	98 bb       	out	0x18, r25	; 24
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:50
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+}
+ 32e:	08 95       	ret
+
+00000330 <__vector_6>:
+__vector_6():
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:76
+  eeprom_write(0, mode);
+}
+
+//timer interrupt routine
+ISR(TIM0_COMPA_vect)
+{
+ 330:	1f 92       	push	r1
+ 332:	0f 92       	push	r0
+ 334:	0f b6       	in	r0, 0x3f	; 63
+ 336:	0f 92       	push	r0
+ 338:	11 24       	eor	r1, r1
+ 33a:	8f 93       	push	r24
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:77
+  intCounter ++ ; //increment duty counter
+ 33c:	80 91 77 00 	lds	r24, 0x0077	; 0x800077 <intCounter>
+ 340:	8f 5f       	subi	r24, 0xFF	; 255
+ 342:	80 93 77 00 	sts	0x0077, r24	; 0x800077 <intCounter>
+D:\ESP\ATTiny stuff\pwm_snowflake_v1_1/pwm_snowflake_v1_1.ino:78
+}
+ 346:	8f 91       	pop	r24
+ 348:	0f 90       	pop	r0
+ 34a:	0f be       	out	0x3f, r0	; 63
+ 34c:	0f 90       	pop	r0
+ 34e:	1f 90       	pop	r1
+ 350:	18 95       	reti
+
+00000352 <_millis>:
+_millis():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:36
+.section .text.millis
+
+; return millis counter ulong in r24:r27
+.global _millis
+_millis:
+    ldi ZL, lo8(wdt_millis_counter)
+ 352:	e9 e7       	ldi	r30, 0x79	; 121
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:37
+    cli
+ 354:	f8 94       	cli
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:38
+    ld r24, Z+
+ 356:	81 91       	ld	r24, Z+
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:39
+    ld r25, Z+
+ 358:	91 91       	ld	r25, Z+
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:40
+    ld r26, Z+
+ 35a:	a1 91       	ld	r26, Z+
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:41
+    ld r27, Z+
+ 35c:	b1 91       	ld	r27, Z+
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:42
+    reti
+ 35e:	18 95       	reti
+
+00000360 <__vector_8>:
+__vector_8():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:48
+
+#define tmp1 r16
+
+.global WDT_vect
+WDT_vect:
+    push ZL
+ 360:	ef 93       	push	r30
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:49
+    in ZL, SREG
+ 362:	ef b7       	in	r30, 0x3f	; 63
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:50
+    push ZL                             ; Save SREG
+ 364:	ef 93       	push	r30
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:51
+    push tmp1
+ 366:	0f 93       	push	r16
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:52
+    ldi ZL, lo8(wdt_millis_counter)
+ 368:	e9 e7       	ldi	r30, 0x79	; 121
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:53
+    ld tmp1, Z
+ 36a:	00 81       	ld	r16, Z
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:54
+    subi tmp1, -19                      ; Add 19 (not 16) because the WDT clock isn't really 128 kHz
+ 36c:	0d 5e       	subi	r16, 0xED	; 237
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:55
+    rjmp save
+ 36e:	02 c0       	rjmp	.+4      	; 0x374 <save>
+
+00000370 <add1>:
+add1():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:57
+add1:
+    ld tmp1, Z
+ 370:	00 81       	ld	r16, Z
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:58
+    sbci tmp1, -1
+ 372:	0f 4f       	sbci	r16, 0xFF	; 255
+
+00000374 <save>:
+save():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:60
+save:
+    st Z+, tmp1
+ 374:	01 93       	st	Z+, r16
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:61
+    brcc add1
+ 376:	e0 f7       	brcc	.-8      	; 0x370 <add1>
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:62
+    pop tmp1
+ 378:	0f 91       	pop	r16
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:63
+    pop ZL
+ 37a:	ef 91       	pop	r30
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:64
+    out SREG, ZL
+ 37c:	ef bf       	out	0x3f, r30	; 63
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:65
+    pop ZL
+ 37e:	ef 91       	pop	r30
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/millis.S:66
+    reti
+ 380:	18 95       	reti
+
+00000382 <__mulhi3>:
+__mulhi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+ 382:	00 24       	eor	r0, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+ 384:	55 27       	eor	r21, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+ 386:	04 c0       	rjmp	.+8      	; 0x390 <__mulhi3+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+ 388:	08 0e       	add	r0, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+ 38a:	59 1f       	adc	r21, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+ 38c:	88 0f       	add	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+ 38e:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+ 390:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+ 392:	29 f0       	breq	.+10     	; 0x39e <__mulhi3+0x1c>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+ 394:	76 95       	lsr	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+ 396:	67 95       	ror	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+ 398:	b8 f3       	brcs	.-18     	; 0x388 <__mulhi3+0x6>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+ 39a:	71 05       	cpc	r23, r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+ 39c:	b9 f7       	brne	.-18     	; 0x38c <__mulhi3+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+ 39e:	80 2d       	mov	r24, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+ 3a0:	95 2f       	mov	r25, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+ 3a2:	08 95       	ret
+
+000003a4 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ 3a4:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ 3a6:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ 3a8:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ 3aa:	07 c0       	rjmp	.+14     	; 0x3ba <__udivmodhi4_ep>
+
+000003ac <__udivmodhi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ 3ac:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ 3ae:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ 3b0:	a6 17       	cp	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ 3b2:	b7 07       	cpc	r27, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ 3b4:	10 f0       	brcs	.+4      	; 0x3ba <__udivmodhi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ 3b6:	a6 1b       	sub	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ 3b8:	b7 0b       	sbc	r27, r23
+
+000003ba <__udivmodhi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ 3ba:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ 3bc:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ 3be:	5a 95       	dec	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ 3c0:	a9 f7       	brne	.-22     	; 0x3ac <__udivmodhi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ 3c2:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ 3c4:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ 3c6:	bc 01       	movw	r22, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ 3c8:	cd 01       	movw	r24, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ 3ca:	08 95       	ret
+
+000003cc <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 3cc:	f8 94       	cli
+
+000003ce <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 3ce:	ff cf       	rjmp	.-2      	; 0x3ce <__stop_program>

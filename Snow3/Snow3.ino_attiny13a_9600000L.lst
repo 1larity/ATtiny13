@@ -1,0 +1,813 @@
+
+C:\Users\Rich\AppData\Local\Temp\arduino_build_897228/Snow3.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	09 c0       	rjmp	.+18     	; 0x14 <__ctors_end>
+   2:	a5 c0       	rjmp	.+330    	; 0x14e <__bad_interrupt>
+   4:	a4 c0       	rjmp	.+328    	; 0x14e <__bad_interrupt>
+   6:	a3 c0       	rjmp	.+326    	; 0x14e <__bad_interrupt>
+   8:	a2 c0       	rjmp	.+324    	; 0x14e <__bad_interrupt>
+   a:	a1 c0       	rjmp	.+322    	; 0x14e <__bad_interrupt>
+   c:	a0 c0       	rjmp	.+320    	; 0x14e <__bad_interrupt>
+   e:	9f c0       	rjmp	.+318    	; 0x14e <__bad_interrupt>
+  10:	9e c0       	rjmp	.+316    	; 0x14e <__bad_interrupt>
+  12:	9d c0       	rjmp	.+314    	; 0x14e <__bad_interrupt>
+
+00000014 <__ctors_end>:
+__trampolines_start():
+  14:	11 24       	eor	r1, r1
+  16:	1f be       	out	0x3f, r1	; 63
+  18:	cf e9       	ldi	r28, 0x9F	; 159
+  1a:	cd bf       	out	0x3d, r28	; 61
+
+0000001c <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  1c:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  1e:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  20:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  22:	ee ed       	ldi	r30, 0xDE	; 222
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  24:	f2 e0       	ldi	r31, 0x02	; 2
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  26:	02 c0       	rjmp	.+4      	; 0x2c <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  28:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  2a:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  2c:	aa 36       	cpi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  2e:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  30:	d9 f7       	brne	.-10     	; 0x28 <__do_copy_data+0xc>
+
+00000032 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  32:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  34:	aa e6       	ldi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  36:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  38:	01 c0       	rjmp	.+2      	; 0x3c <.do_clear_bss_start>
+
+0000003a <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  3a:	1d 92       	st	X+, r1
+
+0000003c <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  3c:	ac 36       	cpi	r26, 0x6C	; 108
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  3e:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  40:	e1 f7       	brne	.-8      	; 0x3a <.do_clear_bss_loop>
+.do_clear_bss_start():
+  42:	01 d0       	rcall	.+2      	; 0x46 <main>
+  44:	4a c1       	rjmp	.+660    	; 0x2da <_exit>
+
+00000046 <main>:
+setup():
+D:\downloads\GK1018\Snow3/Snow3.ino:34
+  eeprom_write(0, addressConfigValue);
+}
+
+void setup()
+{
+  DDRB = 0B111111; //set all pins as output
+  46:	8f e3       	ldi	r24, 0x3F	; 63
+  48:	87 bb       	out	0x17, r24	; 23
+eeprom_read():
+D:\downloads\GK1018\Snow3/Snow3.ino:150
+}
+
+//EEPROM read data
+unsigned char eeprom_read(unsigned char addr)
+{
+  while (EECR & (1 << EEWE));
+  4a:	e1 99       	sbic	0x1c, 1	; 28
+  4c:	fe cf       	rjmp	.-4      	; 0x4a <main+0x4>
+D:\downloads\GK1018\Snow3/Snow3.ino:151
+  EEAR = addr;
+  4e:	1e ba       	out	0x1e, r1	; 30
+D:\downloads\GK1018\Snow3/Snow3.ino:152
+  EECR |= (1 << EERE);
+  50:	e0 9a       	sbi	0x1c, 0	; 28
+D:\downloads\GK1018\Snow3/Snow3.ino:153
+  return EEDR;
+  52:	8d b3       	in	r24, 0x1d	; 29
+iniConfig():
+D:\downloads\GK1018\Snow3/Snow3.ino:27
+byte cutOff = 0;
+unsigned long ticker = 0;
+
+void iniConfig() {
+  addressConfigValue = eeprom_read(0);
+  addressConfigValue++;
+  54:	8f 5f       	subi	r24, 0xFF	; 255
+D:\downloads\GK1018\Snow3/Snow3.ino:28
+  if (addressConfigValue > addressConfigValueLimit) addressConfigValue = 0;
+  56:	88 30       	cpi	r24, 0x08	; 8
+  58:	04 f5       	brge	.+64     	; 0x9a <main+0x54>
+D:\downloads\GK1018\Snow3/Snow3.ino:27
+byte cutOff = 0;
+unsigned long ticker = 0;
+
+void iniConfig() {
+  addressConfigValue = eeprom_read(0);
+  addressConfigValue++;
+  5a:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <addressConfigValue>
+D:\downloads\GK1018\Snow3/Snow3.ino:29
+  if (addressConfigValue > addressConfigValueLimit) addressConfigValue = 0;
+  eeprom_write(0, addressConfigValue);
+  5e:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <addressConfigValue>
+eeprom_write():
+D:\downloads\GK1018\Snow3/Snow3.ino:137
+}
+
+//EEPROM write data
+void eeprom_write(unsigned char addr, unsigned char wdata)
+{
+  cli();
+  62:	f8 94       	cli
+D:\downloads\GK1018\Snow3/Snow3.ino:138
+  while (EECR & (1 << EEWE));
+  64:	e1 99       	sbic	0x1c, 1	; 28
+  66:	fe cf       	rjmp	.-4      	; 0x64 <main+0x1e>
+D:\downloads\GK1018\Snow3/Snow3.ino:139
+  EECR = (0 << EEPM1) | (0 >> EEPM0);
+  68:	1c ba       	out	0x1c, r1	; 28
+D:\downloads\GK1018\Snow3/Snow3.ino:140
+  EEAR = addr;
+  6a:	1e ba       	out	0x1e, r1	; 30
+D:\downloads\GK1018\Snow3/Snow3.ino:141
+  EEDR = wdata;
+  6c:	8d bb       	out	0x1d, r24	; 29
+D:\downloads\GK1018\Snow3/Snow3.ino:142
+  EECR |= (1 << EEMWE);
+  6e:	e2 9a       	sbi	0x1c, 2	; 28
+D:\downloads\GK1018\Snow3/Snow3.ino:143
+  EECR |= (1 << EEWE);
+  70:	e1 9a       	sbi	0x1c, 1	; 28
+D:\downloads\GK1018\Snow3/Snow3.ino:144
+  sei();
+  72:	78 94       	sei
+showConfig():
+D:\downloads\GK1018\Snow3/Snow3.ino:124
+}
+
+//flashes one LED to show which number the current pattern is
+void showConfig() {
+  //digitalWrite(3, LOW);
+  PORTB &= ~_BV(3); //LOW
+  74:	c3 98       	cbi	0x18, 3	; 24
+D:\downloads\GK1018\Snow3/Snow3.ino:125
+  delay(500);
+  76:	84 ef       	ldi	r24, 0xF4	; 244
+  78:	91 e0       	ldi	r25, 0x01	; 1
+  7a:	7c d0       	rcall	.+248    	; 0x174 <delay>
+main():
+D:\downloads\GK1018\Snow3/Snow3.ino:126
+  for (char i = 0; i < addressConfigValue ; i++) {
+  7c:	c0 e0       	ldi	r28, 0x00	; 0
+showConfig():
+  7e:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <addressConfigValue>
+  82:	c8 17       	cp	r28, r24
+  84:	e4 f4       	brge	.+56     	; 0xbe <__stack+0x1f>
+D:\downloads\GK1018\Snow3/Snow3.ino:127
+    PORTB |= _BV(3); //HIGH
+  86:	c3 9a       	sbi	0x18, 3	; 24
+D:\downloads\GK1018\Snow3/Snow3.ino:128
+    delay(200);
+  88:	88 ec       	ldi	r24, 0xC8	; 200
+  8a:	90 e0       	ldi	r25, 0x00	; 0
+  8c:	73 d0       	rcall	.+230    	; 0x174 <delay>
+D:\downloads\GK1018\Snow3/Snow3.ino:129
+    PORTB &= ~_BV(3); //LOW
+  8e:	c3 98       	cbi	0x18, 3	; 24
+D:\downloads\GK1018\Snow3/Snow3.ino:130
+    delay(200);
+  90:	88 ec       	ldi	r24, 0xC8	; 200
+  92:	90 e0       	ldi	r25, 0x00	; 0
+  94:	6f d0       	rcall	.+222    	; 0x174 <delay>
+  96:	cf 5f       	subi	r28, 0xFF	; 255
+  98:	f2 cf       	rjmp	.-28     	; 0x7e <main+0x38>
+iniConfig():
+D:\downloads\GK1018\Snow3/Snow3.ino:28
+unsigned long ticker = 0;
+
+void iniConfig() {
+  addressConfigValue = eeprom_read(0);
+  addressConfigValue++;
+  if (addressConfigValue > addressConfigValueLimit) addressConfigValue = 0;
+  9a:	10 92 6b 00 	sts	0x006B, r1	; 0x80006b <addressConfigValue>
+  9e:	df cf       	rjmp	.-66     	; 0x5e <main+0x18>
+loop():
+D:\downloads\GK1018\Snow3/Snow3.ino:81
+void loop()
+{
+  switch (addressConfigValue) {
+    case 0:
+      //slow inverse chase
+      inverseChase(countLed, 1);
+  a0:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+  a4:	61 e0       	ldi	r22, 0x01	; 1
+  a6:	70 e0       	ldi	r23, 0x00	; 0
+D:\downloads\GK1018\Snow3/Snow3.ino:85
+      break;
+    //fast inverse chase
+    case 1:
+      inverseChase(countLed, 4);
+  a8:	90 e0       	ldi	r25, 0x00	; 0
+  aa:	c2 d0       	rcall	.+388    	; 0x230 <inverseChase(int, int)>
+D:\downloads\GK1018\Snow3/Snow3.ino:117
+      allOnOff(0, 20);
+      break;
+  }
+
+  //main LED iterator
+  countLed ++;
+  ac:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+  b0:	8f 5f       	subi	r24, 0xFF	; 255
+  b2:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__data_end>
+D:\downloads\GK1018\Snow3/Snow3.ino:118
+  if ( countLed >= 5) countLed = 0;
+  b6:	85 30       	cpi	r24, 0x05	; 5
+  b8:	10 f0       	brcs	.+4      	; 0xbe <__stack+0x1f>
+  ba:	10 92 6a 00 	sts	0x006A, r1	; 0x80006a <__data_end>
+D:\downloads\GK1018\Snow3/Snow3.ino:78
+}
+
+
+void loop()
+{
+  switch (addressConfigValue) {
+  be:	e0 91 6b 00 	lds	r30, 0x006B	; 0x80006b <addressConfigValue>
+  c2:	e8 30       	cpi	r30, 0x08	; 8
+  c4:	98 f7       	brcc	.-26     	; 0xac <__stack+0xd>
+  c6:	0e 2e       	mov	r0, r30
+  c8:	00 0c       	add	r0, r0
+  ca:	ff 0b       	sbc	r31, r31
+  cc:	e7 59       	subi	r30, 0x97	; 151
+  ce:	ff 4f       	sbci	r31, 0xFF	; 255
+  d0:	09 94       	ijmp
+  d2:	e6 cf       	rjmp	.-52     	; 0xa0 <__stack+0x1>
+  d4:	06 c0       	rjmp	.+12     	; 0xe2 <__stack+0x43>
+  d6:	0a c0       	rjmp	.+20     	; 0xec <__stack+0x4d>
+  d8:	10 c0       	rjmp	.+32     	; 0xfa <__stack+0x5b>
+  da:	14 c0       	rjmp	.+40     	; 0x104 <__stack+0x65>
+  dc:	1e c0       	rjmp	.+60     	; 0x11a <__stack+0x7b>
+  de:	27 c0       	rjmp	.+78     	; 0x12e <__stack+0x8f>
+  e0:	2e c0       	rjmp	.+92     	; 0x13e <__stack+0x9f>
+D:\downloads\GK1018\Snow3/Snow3.ino:85
+      //slow inverse chase
+      inverseChase(countLed, 1);
+      break;
+    //fast inverse chase
+    case 1:
+      inverseChase(countLed, 4);
+  e2:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+  e6:	64 e0       	ldi	r22, 0x04	; 4
+  e8:	70 e0       	ldi	r23, 0x00	; 0
+  ea:	de cf       	rjmp	.-68     	; 0xa8 <__stack+0x9>
+D:\downloads\GK1018\Snow3/Snow3.ino:89
+      break;
+    //slow chase
+    case 2:
+      chase(countLed, 1);
+  ec:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+  f0:	61 e0       	ldi	r22, 0x01	; 1
+  f2:	70 e0       	ldi	r23, 0x00	; 0
+D:\downloads\GK1018\Snow3/Snow3.ino:93
+      break;
+    //fast chase
+    case 3:
+      chase(countLed, 4);
+  f4:	90 e0       	ldi	r25, 0x00	; 0
+  f6:	6e d0       	rcall	.+220    	; 0x1d4 <chase(int, int)>
+  f8:	d9 cf       	rjmp	.-78     	; 0xac <__stack+0xd>
+  fa:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+  fe:	64 e0       	ldi	r22, 0x04	; 4
+ 100:	70 e0       	ldi	r23, 0x00	; 0
+ 102:	f8 cf       	rjmp	.-16     	; 0xf4 <__stack+0x55>
+D:\downloads\GK1018\Snow3/Snow3.ino:97
+      break;
+    //blink all (1 second cycle)
+    case 4:
+      allOnOff(1, 1000);
+ 104:	68 ee       	ldi	r22, 0xE8	; 232
+ 106:	73 e0       	ldi	r23, 0x03	; 3
+ 108:	81 e0       	ldi	r24, 0x01	; 1
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	3d d0       	rcall	.+122    	; 0x188 <allOnOff(int, int)>
+D:\downloads\GK1018\Snow3/Snow3.ino:98
+      allOnOff(0, 1000);
+ 10e:	68 ee       	ldi	r22, 0xE8	; 232
+ 110:	73 e0       	ldi	r23, 0x03	; 3
+D:\downloads\GK1018\Snow3/Snow3.ino:112
+      allOnOff(0, 50);
+      break;
+    //fast strobe all (.02 second cycle)
+    case 7:
+      allOnOff(1, 20);
+      allOnOff(0, 20);
+ 112:	90 e0       	ldi	r25, 0x00	; 0
+ 114:	80 e0       	ldi	r24, 0x00	; 0
+ 116:	38 d0       	rcall	.+112    	; 0x188 <allOnOff(int, int)>
+ 118:	c9 cf       	rjmp	.-110    	; 0xac <__stack+0xd>
+D:\downloads\GK1018\Snow3/Snow3.ino:102
+      allOnOff(1, 1000);
+      allOnOff(0, 1000);
+      break;
+    //flash all (.1 secondcycle)
+    case 5:
+      allOnOff(1, 100);
+ 11a:	64 e6       	ldi	r22, 0x64	; 100
+ 11c:	70 e0       	ldi	r23, 0x00	; 0
+ 11e:	81 e0       	ldi	r24, 0x01	; 1
+ 120:	90 e0       	ldi	r25, 0x00	; 0
+ 122:	32 d0       	rcall	.+100    	; 0x188 <allOnOff(int, int)>
+D:\downloads\GK1018\Snow3/Snow3.ino:103
+      allOnOff(0, 100);
+ 124:	64 e6       	ldi	r22, 0x64	; 100
+ 126:	70 e0       	ldi	r23, 0x00	; 0
+ 128:	90 e0       	ldi	r25, 0x00	; 0
+ 12a:	80 e0       	ldi	r24, 0x00	; 0
+ 12c:	2d d0       	rcall	.+90     	; 0x188 <allOnOff(int, int)>
+D:\downloads\GK1018\Snow3/Snow3.ino:106
+    //strobe all (.05 second cycle)
+    case 6:
+      allOnOff(1, 50);
+ 12e:	62 e3       	ldi	r22, 0x32	; 50
+ 130:	70 e0       	ldi	r23, 0x00	; 0
+ 132:	81 e0       	ldi	r24, 0x01	; 1
+ 134:	90 e0       	ldi	r25, 0x00	; 0
+ 136:	28 d0       	rcall	.+80     	; 0x188 <allOnOff(int, int)>
+D:\downloads\GK1018\Snow3/Snow3.ino:107
+      allOnOff(0, 50);
+ 138:	62 e3       	ldi	r22, 0x32	; 50
+ 13a:	70 e0       	ldi	r23, 0x00	; 0
+ 13c:	ea cf       	rjmp	.-44     	; 0x112 <__stack+0x73>
+D:\downloads\GK1018\Snow3/Snow3.ino:111
+      break;
+    //fast strobe all (.02 second cycle)
+    case 7:
+      allOnOff(1, 20);
+ 13e:	64 e1       	ldi	r22, 0x14	; 20
+ 140:	70 e0       	ldi	r23, 0x00	; 0
+ 142:	81 e0       	ldi	r24, 0x01	; 1
+ 144:	90 e0       	ldi	r25, 0x00	; 0
+ 146:	20 d0       	rcall	.+64     	; 0x188 <allOnOff(int, int)>
+D:\downloads\GK1018\Snow3/Snow3.ino:112
+      allOnOff(0, 20);
+ 148:	64 e1       	ldi	r22, 0x14	; 20
+ 14a:	70 e0       	ldi	r23, 0x00	; 0
+ 14c:	e2 cf       	rjmp	.-60     	; 0x112 <__stack+0x73>
+
+0000014e <__bad_interrupt>:
+__vector_1():
+ 14e:	58 cf       	rjmp	.-336    	; 0x0 <__vectors>
+
+00000150 <digitalWrite>:
+digitalWrite():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:45
+ *
+ * @param pin The Arduino pin number to set the state of
+ * @param val The state to set. Valid options are HIGH or LOW
+ */
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 150:	21 e0       	ldi	r18, 0x01	; 1
+ 152:	30 e0       	ldi	r19, 0x00	; 0
+ 154:	a9 01       	movw	r20, r18
+ 156:	02 c0       	rjmp	.+4      	; 0x15c <digitalWrite+0xc>
+ 158:	44 0f       	add	r20, r20
+ 15a:	55 1f       	adc	r21, r21
+ 15c:	8a 95       	dec	r24
+ 15e:	e2 f7       	brpl	.-8      	; 0x158 <digitalWrite+0x8>
+ 160:	ca 01       	movw	r24, r20
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:47
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+ 162:	98 b3       	in	r25, 0x18	; 24
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:46
+ * @param pin The Arduino pin number to set the state of
+ * @param val The state to set. Valid options are HIGH or LOW
+ */
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+ 164:	66 23       	and	r22, r22
+ 166:	19 f0       	breq	.+6      	; 0x16e <digitalWrite+0x1e>
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:47
+    PORTB |= _BV(pin);  // Set pin high
+ 168:	89 2b       	or	r24, r25
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:49
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+ 16a:	88 bb       	out	0x18, r24	; 24
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:50
+}
+ 16c:	08 95       	ret
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring_digital.c:49
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+ 16e:	80 95       	com	r24
+ 170:	89 23       	and	r24, r25
+ 172:	fb cf       	rjmp	.-10     	; 0x16a <digitalWrite+0x1a>
+
+00000174 <delay>:
+delay():
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring.c:138
+ *
+ * @param ms The number of milliseconds to pause
+ */
+void delay(uint16_t ms)
+{
+  while(ms--)
+ 174:	01 97       	sbiw	r24, 0x01	; 1
+ 176:	08 f4       	brcc	.+2      	; 0x17a <delay+0x6>
+C:\Users\Rich\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.0.3\cores\microcore/wiring.c:140
+    _delay_ms(1);
+}
+ 178:	08 95       	ret
+_delay_ms():
+c:\users\rich\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 17a:	ef e5       	ldi	r30, 0x5F	; 95
+ 17c:	f9 e0       	ldi	r31, 0x09	; 9
+ 17e:	31 97       	sbiw	r30, 0x01	; 1
+ 180:	f1 f7       	brne	.-4      	; 0x17e <delay+0xa>
+ 182:	00 c0       	rjmp	.+0      	; 0x184 <delay+0x10>
+ 184:	00 00       	nop
+ 186:	f6 cf       	rjmp	.-20     	; 0x174 <delay>
+
+00000188 <allOnOff(int, int)>:
+allOnOff():
+D:\downloads\GK1018\Snow3/Snow3.ino:65
+  digitalWrite(pinOut[countLed], ledON);
+  delay(timerOut / rate);
+}
+
+//all on/off
+void allOnOff(int state, int rate) {
+ 188:	cf 92       	push	r12
+ 18a:	df 92       	push	r13
+ 18c:	ef 92       	push	r14
+ 18e:	ff 92       	push	r15
+ 190:	0f 93       	push	r16
+ 192:	1f 93       	push	r17
+ 194:	cf 93       	push	r28
+ 196:	df 93       	push	r29
+ 198:	6c 01       	movw	r12, r24
+ 19a:	8b 01       	movw	r16, r22
+ 19c:	c0 e6       	ldi	r28, 0x60	; 96
+ 19e:	d0 e0       	ldi	r29, 0x00	; 0
+ 1a0:	8a e6       	ldi	r24, 0x6A	; 106
+ 1a2:	e8 2e       	mov	r14, r24
+ 1a4:	80 e0       	ldi	r24, 0x00	; 0
+ 1a6:	f8 2e       	mov	r15, r24
+ 1a8:	88 81       	ld	r24, Y
+ 1aa:	22 96       	adiw	r28, 0x02	; 2
+D:\downloads\GK1018\Snow3/Snow3.ino:68
+  for (int i = 0; i < countOut; i++) {
+    if (state == 1)
+      digitalWrite(pinOut[i], ledON);
+ 1ac:	61 e0       	ldi	r22, 0x01	; 1
+D:\downloads\GK1018\Snow3/Snow3.ino:67
+}
+
+//all on/off
+void allOnOff(int state, int rate) {
+  for (int i = 0; i < countOut; i++) {
+    if (state == 1)
+ 1ae:	91 e0       	ldi	r25, 0x01	; 1
+ 1b0:	c9 16       	cp	r12, r25
+ 1b2:	d1 04       	cpc	r13, r1
+ 1b4:	09 f0       	breq	.+2      	; 0x1b8 <allOnOff(int, int)+0x30>
+D:\downloads\GK1018\Snow3/Snow3.ino:70
+      digitalWrite(pinOut[i], ledON);
+    else
+      digitalWrite(pinOut[i], !ledON);
+ 1b6:	60 e0       	ldi	r22, 0x00	; 0
+ 1b8:	cb df       	rcall	.-106    	; 0x150 <digitalWrite>
+D:\downloads\GK1018\Snow3/Snow3.ino:66
+  delay(timerOut / rate);
+}
+
+//all on/off
+void allOnOff(int state, int rate) {
+  for (int i = 0; i < countOut; i++) {
+ 1ba:	ec 16       	cp	r14, r28
+ 1bc:	fd 06       	cpc	r15, r29
+ 1be:	a1 f7       	brne	.-24     	; 0x1a8 <allOnOff(int, int)+0x20>
+D:\downloads\GK1018\Snow3/Snow3.ino:72
+    if (state == 1)
+      digitalWrite(pinOut[i], ledON);
+    else
+      digitalWrite(pinOut[i], !ledON);
+  }
+  delay(rate);
+ 1c0:	c8 01       	movw	r24, r16
+D:\downloads\GK1018\Snow3/Snow3.ino:73
+}
+ 1c2:	df 91       	pop	r29
+ 1c4:	cf 91       	pop	r28
+ 1c6:	1f 91       	pop	r17
+ 1c8:	0f 91       	pop	r16
+ 1ca:	ff 90       	pop	r15
+ 1cc:	ef 90       	pop	r14
+ 1ce:	df 90       	pop	r13
+ 1d0:	cf 90       	pop	r12
+D:\downloads\GK1018\Snow3/Snow3.ino:72
+    if (state == 1)
+      digitalWrite(pinOut[i], ledON);
+    else
+      digitalWrite(pinOut[i], !ledON);
+  }
+  delay(rate);
+ 1d2:	d0 cf       	rjmp	.-96     	; 0x174 <delay>
+
+000001d4 <chase(int, int)>:
+chase():
+D:\downloads\GK1018\Snow3/Snow3.ino:56
+  digitalWrite(pinOut[countLed], !ledON);
+  delay(timerOut / rate);
+}
+
+//chase. all LEDs off apart from 1
+void chase (int countLed, int rate) {
+ 1d4:	cf 92       	push	r12
+ 1d6:	df 92       	push	r13
+ 1d8:	ef 92       	push	r14
+ 1da:	ff 92       	push	r15
+ 1dc:	0f 93       	push	r16
+ 1de:	1f 93       	push	r17
+ 1e0:	cf 93       	push	r28
+ 1e2:	df 93       	push	r29
+ 1e4:	ec 01       	movw	r28, r24
+ 1e6:	7b 01       	movw	r14, r22
+ 1e8:	00 e6       	ldi	r16, 0x60	; 96
+ 1ea:	10 e0       	ldi	r17, 0x00	; 0
+ 1ec:	9a e6       	ldi	r25, 0x6A	; 106
+ 1ee:	c9 2e       	mov	r12, r25
+ 1f0:	90 e0       	ldi	r25, 0x00	; 0
+ 1f2:	d9 2e       	mov	r13, r25
+D:\downloads\GK1018\Snow3/Snow3.ino:58
+  for (int i = 0; i < countOut; i++) {
+    digitalWrite(pinOut[i], !ledON);
+ 1f4:	f8 01       	movw	r30, r16
+ 1f6:	80 81       	ld	r24, Z
+ 1f8:	0e 5f       	subi	r16, 0xFE	; 254
+ 1fa:	1f 4f       	sbci	r17, 0xFF	; 255
+ 1fc:	60 e0       	ldi	r22, 0x00	; 0
+ 1fe:	a8 df       	rcall	.-176    	; 0x150 <digitalWrite>
+D:\downloads\GK1018\Snow3/Snow3.ino:57
+  delay(timerOut / rate);
+}
+
+//chase. all LEDs off apart from 1
+void chase (int countLed, int rate) {
+  for (int i = 0; i < countOut; i++) {
+ 200:	c0 16       	cp	r12, r16
+ 202:	d1 06       	cpc	r13, r17
+ 204:	b9 f7       	brne	.-18     	; 0x1f4 <chase(int, int)+0x20>
+D:\downloads\GK1018\Snow3/Snow3.ino:60
+    digitalWrite(pinOut[i], !ledON);
+  }
+  digitalWrite(pinOut[countLed], ledON);
+ 206:	cc 0f       	add	r28, r28
+ 208:	dd 1f       	adc	r29, r29
+ 20a:	c0 5a       	subi	r28, 0xA0	; 160
+ 20c:	df 4f       	sbci	r29, 0xFF	; 255
+ 20e:	61 e0       	ldi	r22, 0x01	; 1
+ 210:	88 81       	ld	r24, Y
+ 212:	9e df       	rcall	.-196    	; 0x150 <digitalWrite>
+D:\downloads\GK1018\Snow3/Snow3.ino:61
+  delay(timerOut / rate);
+ 214:	88 ec       	ldi	r24, 0xC8	; 200
+ 216:	90 e0       	ldi	r25, 0x00	; 0
+ 218:	b7 01       	movw	r22, r14
+ 21a:	38 d0       	rcall	.+112    	; 0x28c <__divmodhi4>
+ 21c:	cb 01       	movw	r24, r22
+D:\downloads\GK1018\Snow3/Snow3.ino:62
+}
+ 21e:	df 91       	pop	r29
+ 220:	cf 91       	pop	r28
+ 222:	1f 91       	pop	r17
+ 224:	0f 91       	pop	r16
+ 226:	ff 90       	pop	r15
+ 228:	ef 90       	pop	r14
+ 22a:	df 90       	pop	r13
+ 22c:	cf 90       	pop	r12
+D:\downloads\GK1018\Snow3/Snow3.ino:61
+void chase (int countLed, int rate) {
+  for (int i = 0; i < countOut; i++) {
+    digitalWrite(pinOut[i], !ledON);
+  }
+  digitalWrite(pinOut[countLed], ledON);
+  delay(timerOut / rate);
+ 22e:	a2 cf       	rjmp	.-188    	; 0x174 <delay>
+
+00000230 <inverseChase(int, int)>:
+inverseChase():
+D:\downloads\GK1018\Snow3/Snow3.ino:47
+  digitalWrite(pinOut[led], 0);
+  // wait for 30 milliseconds to see the dimming effect
+}
+
+//inverse chase, all LEDs lit except one
+void inverseChase (int countLed, int rate) {
+ 230:	cf 92       	push	r12
+ 232:	df 92       	push	r13
+ 234:	ef 92       	push	r14
+ 236:	ff 92       	push	r15
+ 238:	0f 93       	push	r16
+ 23a:	1f 93       	push	r17
+ 23c:	cf 93       	push	r28
+ 23e:	df 93       	push	r29
+ 240:	ec 01       	movw	r28, r24
+ 242:	7b 01       	movw	r14, r22
+ 244:	00 e6       	ldi	r16, 0x60	; 96
+ 246:	10 e0       	ldi	r17, 0x00	; 0
+ 248:	9a e6       	ldi	r25, 0x6A	; 106
+ 24a:	c9 2e       	mov	r12, r25
+ 24c:	90 e0       	ldi	r25, 0x00	; 0
+ 24e:	d9 2e       	mov	r13, r25
+D:\downloads\GK1018\Snow3/Snow3.ino:49
+  for (int i = 0; i < countOut; i++) {
+    digitalWrite(pinOut[i], ledON);
+ 250:	f8 01       	movw	r30, r16
+ 252:	80 81       	ld	r24, Z
+ 254:	0e 5f       	subi	r16, 0xFE	; 254
+ 256:	1f 4f       	sbci	r17, 0xFF	; 255
+ 258:	61 e0       	ldi	r22, 0x01	; 1
+ 25a:	7a df       	rcall	.-268    	; 0x150 <digitalWrite>
+D:\downloads\GK1018\Snow3/Snow3.ino:48
+  // wait for 30 milliseconds to see the dimming effect
+}
+
+//inverse chase, all LEDs lit except one
+void inverseChase (int countLed, int rate) {
+  for (int i = 0; i < countOut; i++) {
+ 25c:	c0 16       	cp	r12, r16
+ 25e:	d1 06       	cpc	r13, r17
+ 260:	b9 f7       	brne	.-18     	; 0x250 <inverseChase(int, int)+0x20>
+D:\downloads\GK1018\Snow3/Snow3.ino:51
+    digitalWrite(pinOut[i], ledON);
+  }
+  digitalWrite(pinOut[countLed], !ledON);
+ 262:	cc 0f       	add	r28, r28
+ 264:	dd 1f       	adc	r29, r29
+ 266:	c0 5a       	subi	r28, 0xA0	; 160
+ 268:	df 4f       	sbci	r29, 0xFF	; 255
+ 26a:	60 e0       	ldi	r22, 0x00	; 0
+ 26c:	88 81       	ld	r24, Y
+ 26e:	70 df       	rcall	.-288    	; 0x150 <digitalWrite>
+D:\downloads\GK1018\Snow3/Snow3.ino:52
+  delay(timerOut / rate);
+ 270:	88 ec       	ldi	r24, 0xC8	; 200
+ 272:	90 e0       	ldi	r25, 0x00	; 0
+ 274:	b7 01       	movw	r22, r14
+ 276:	0a d0       	rcall	.+20     	; 0x28c <__divmodhi4>
+ 278:	cb 01       	movw	r24, r22
+D:\downloads\GK1018\Snow3/Snow3.ino:53
+}
+ 27a:	df 91       	pop	r29
+ 27c:	cf 91       	pop	r28
+ 27e:	1f 91       	pop	r17
+ 280:	0f 91       	pop	r16
+ 282:	ff 90       	pop	r15
+ 284:	ef 90       	pop	r14
+ 286:	df 90       	pop	r13
+ 288:	cf 90       	pop	r12
+D:\downloads\GK1018\Snow3/Snow3.ino:52
+void inverseChase (int countLed, int rate) {
+  for (int i = 0; i < countOut; i++) {
+    digitalWrite(pinOut[i], ledON);
+  }
+  digitalWrite(pinOut[countLed], !ledON);
+  delay(timerOut / rate);
+ 28a:	74 cf       	rjmp	.-280    	; 0x174 <delay>
+
+0000028c <__divmodhi4>:
+__divmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1440
+ 28c:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1441
+ 28e:	07 2e       	mov	r0, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1442
+ 290:	16 f4       	brtc	.+4      	; 0x296 <__divmodhi4+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1443
+ 292:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1444
+ 294:	06 d0       	rcall	.+12     	; 0x2a2 <__divmodhi4_neg1>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1446
+ 296:	77 fd       	sbrc	r23, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1447
+ 298:	08 d0       	rcall	.+16     	; 0x2aa <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1448
+ 29a:	0b d0       	rcall	.+22     	; 0x2b2 <__udivmodhi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1449
+ 29c:	07 fc       	sbrc	r0, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1450
+ 29e:	05 d0       	rcall	.+10     	; 0x2aa <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1451
+ 2a0:	3e f4       	brtc	.+14     	; 0x2b0 <__divmodhi4_exit>
+
+000002a2 <__divmodhi4_neg1>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1454
+ 2a2:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1455
+ 2a4:	81 95       	neg	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1456
+ 2a6:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1457
+ 2a8:	08 95       	ret
+
+000002aa <__divmodhi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1460
+ 2aa:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1461
+ 2ac:	61 95       	neg	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1462
+ 2ae:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000002b0 <__divmodhi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1464
+ 2b0:	08 95       	ret
+
+000002b2 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ 2b2:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ 2b4:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ 2b6:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ 2b8:	07 c0       	rjmp	.+14     	; 0x2c8 <__udivmodhi4_ep>
+
+000002ba <__udivmodhi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ 2ba:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ 2bc:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ 2be:	a6 17       	cp	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ 2c0:	b7 07       	cpc	r27, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ 2c2:	10 f0       	brcs	.+4      	; 0x2c8 <__udivmodhi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ 2c4:	a6 1b       	sub	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ 2c6:	b7 0b       	sbc	r27, r23
+
+000002c8 <__udivmodhi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ 2c8:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ 2ca:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ 2cc:	5a 95       	dec	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ 2ce:	a9 f7       	brne	.-22     	; 0x2ba <__udivmodhi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ 2d0:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ 2d2:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ 2d4:	bc 01       	movw	r22, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ 2d6:	cd 01       	movw	r24, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ 2d8:	08 95       	ret
+
+000002da <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 2da:	f8 94       	cli
+
+000002dc <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 2dc:	ff cf       	rjmp	.-2      	; 0x2dc <__stop_program>
