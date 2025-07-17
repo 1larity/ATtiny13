@@ -172,13 +172,13 @@ void loop() {
   if (currentMillis - previousMillis > increment)
   {
     //do fade in/out stuff
-    dutyThreshHold += rate; //increment/decremet the on-time threshold (and thus PWM duty cycle)
+    dutyThreshHold += rate; //increment/decrement the on-time threshold (and thus PWM duty cycle)
     if (dutyThreshHold >= 255) {
       rate = -cRate; //if we've reached max duty cycle, set rate to decrement
     }
     if (dutyThreshHold <= 0) {
       rate = cRate; //if we've reached min duty cycle, set rate to increment
-      currentLED = currentLED + 1; //advance curent LED
+      currentLED = currentLED + 1; //advance current LED
 
       randLED = (bbs_next()) % maxLEDs;
 
