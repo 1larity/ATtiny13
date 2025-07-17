@@ -67,7 +67,7 @@ void initConfig()
 {
   mode = eeprom_read(0);
   mode++;
-  if (mode >= maxMode) mode = 0; 
+  if (mode > maxMode) mode = 0;
   eeprom_write(0, mode);
 }
 
