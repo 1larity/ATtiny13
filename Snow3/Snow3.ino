@@ -101,6 +101,7 @@ void loop()
     case 5:
       allOnOff(1, 100);
       allOnOff(0, 100);
+      break;
     //strobe all (.05 second cycle)
     case 6:
       allOnOff(1, 50);
