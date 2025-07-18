@@ -16,3 +16,14 @@ pwm_snowflake_v1_1:-  5 pattern lightshow utilising software PWM for smoother, m
 
 Light patterns can be selected by cycling the unit's power to advance to the next pattern.
 Precompiled binaries (HEX files) included for those that don't want to build their own code and just want to upload Firmware.
+
+## Build test
+
+A helper script in `tests/build.sh` compiles the sketches using `arduino-cli`.
+Install `arduino-cli` and the MicroCore board definitions, then run:
+
+```
+./tests/build.sh
+```
+
+The command fails if either sketch fails to compile.
